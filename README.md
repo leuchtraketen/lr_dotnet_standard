@@ -1,1 +1,1 @@
-# lr_dotnet_standard
+# lr_core

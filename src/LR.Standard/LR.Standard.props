@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Project>
+  <PropertyGroup>
+    <LangVersion>preview</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Version>1.0.0.0</Version>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Description>Base classes for .NET 7</Description>
+    <AssemblyName>LR.Standard</AssemblyName>
+    <PackageId>LR.Standard</PackageId>
+    <!-- <PackageVersion>7.0.4154.$([System.DateTime]::Now.ToString("yyMMddHHmm").Substring(0,9))</PackageVersion> -->
+    <PackageVersion>7.1.4157.$(VersionTimestamp)</PackageVersion>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <RootNamespace>
+    </RootNamespace>
+
+    <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
+
+  </PropertyGroup>
+</Project>
