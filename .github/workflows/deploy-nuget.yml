@@ -23,7 +23,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          path: lr_core
+          path: lr_dotnet_standard
 
       - name: Cleanup
         run: rm -rf ~/.dotnet/toolResolverCache
@@ -44,10 +44,10 @@ jobs:
         run: bash -c 'yes | androidsdk "platform-tools" "platforms;android-33" "ndk-bundle" "build-tools;33.0.0"'
 
       - name: Install Workloads
-        run: cd lr_core; echo -n | sudo ~/.dotnet/dotnet workload install android ; sudo ~/.dotnet/dotnet nuget locals temp --clear
+        run: cd lr_dotnet_standard; echo -n | sudo ~/.dotnet/dotnet workload install android ; sudo ~/.dotnet/dotnet nuget locals temp --clear
 
       - name: Run './build.cmd CiGithubActionsLinux'
-        run: cd lr_core; export PATH="$PATH:$HOME/.dotnet/tools"; ./build.cmd CiGithubActionsLinux
+        run: cd lr_dotnet_standard; export PATH="$PATH:$HOME/.dotnet/tools"; ./build.cmd CiGithubActionsLinux
         env:
           NuGetAzureDevOpsPassword: ${{ secrets.NUGET_AZUREDEVOPS_PASSWORD }}
           NuGetOrgApiKey: ${{ secrets.NUGET_ORG_APIKEY }}
@@ -55,6 +55,5 @@ jobs:
 
       - name: Cleanup
         if: always()
-        run: rm -rf lr_core
-
+        run: rm -rf lr_dotnet_standard
 
