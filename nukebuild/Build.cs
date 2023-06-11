@@ -42,7 +42,7 @@ class Build : NukeBuild
 
     static bool IsRunningOnWindows => RuntimeInformation.IsOSPlatform(OSPlatform.Windows);
 
-    string NuGetAzureDevOpsSource => "https://pkgs.dev.azure.com/schulz-dev/lr/_packaging/LR/nuget/v3/index.json";
+    string NuGetAzureDevOpsSource => "https://pkgs.dev.azure.com/schulz-dev/leuchtraketen/_packaging/Leuchtraketen1/nuget/v3/index.json";
     string NuGetAzureDevOpsUser => "schulz-dev";
     [Parameter] [Secret] string NuGetAzureDevOpsPassword;
 
