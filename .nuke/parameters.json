@@ -2,3 +2,4 @@
   "$schema": "./build.schema.json",
   "Solution": "src/LR.Core.sln"
 }
+
