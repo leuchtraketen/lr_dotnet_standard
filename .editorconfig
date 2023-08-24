@@ -36,6 +36,7 @@ dotnet_style_qualification_for_property = false:none
 # ReSharper properties
 resharper_max_attribute_length_for_same_line = 180
 no_indent_inside_if_element_longer_than = 5000
+ij_html_space_inside_empty_tag = true
 
 # Solution Files
 [*.sln]
