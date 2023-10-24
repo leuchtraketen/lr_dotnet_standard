@@ -34,12 +34,19 @@ dotnet_style_qualification_for_method = false:none
 dotnet_style_qualification_for_property = false:none
 
 # ReSharper properties
+resharper_align_multiline_binary_patterns = true
+resharper_align_tuple_components = true
+resharper_csharp_int_align_comments = true
+resharper_csharp_outdent_dots = true
 resharper_html_attribute_style = first_attribute_on_single_line
 resharper_html_max_blank_lines_between_tags = 1
 resharper_html_space_before_self_closing = true
+resharper_int_align_switch_expressions = true
+resharper_int_align_switch_sections = true
 resharper_max_attribute_length_for_same_line = 180
 no_indent_inside_if_element_longer_than = 5000
 ij_html_space_inside_empty_tag = true
+resharper_outdent_binary_pattern_ops = true
 
 # Solution Files
 [*.sln]
